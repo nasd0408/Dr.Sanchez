@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'lato';
+    box-sizing: border-box;
+}
+*:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color: #8cb1b9
+;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: static;
+    background-color: #8cb1b9
+;
+    color: white;
+}
+fieldset {
+    position: relative;
+    border: none;  
+  }
+  
+  label {
+    position: absolute;  
+    top: 18px;
+    color: rgba(0, 0, 0, 0.3);
+    transform-origin: left;
+    transition: all 0.3s ease;
+  }
+  input:focus ~ label {
+    color: #8b9b9b;  
+  }
+  .after {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #8b9b9b 50%, transparent 50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: all 0.6s ease;
+  }
+  
+  input:focus ~ .after {
+    background-position: 0 0;
+  }
+  
+  input:focus ~ label,
+  input:valid ~ label {
+    top: 0;
+    transform: scale(0.6, 0.6);
+  }
+  
+  
+.section .grid{
+
+    gap:30px;
+    overflow: visible;
+}
+
+.section .cita{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+}
+
+.cita input{
+    display: block;
+    margin: 10px 0;
+    font-size: 1em;
+    border: none;
+    padding: .4em;
+    width: 100%;
+}
+.cita input:focus{
+    outline: none;
+}
+.input-name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.secondary{
+    background-color: white;
+    color: black;
+}
+.about img{
+    border-radius: 10px;
+}
+.about-text{
+    line-height: 1.6;
+}
+.buttons{
+   position: absolute; 
+}
+
+
+@media (max-width: 768px){
+    .grid,
+    .section .grid{
+        grid-template-columns: 1fr;
+        
+    }
+    .flex{
+        flex-direction: column;
+    }
+}
